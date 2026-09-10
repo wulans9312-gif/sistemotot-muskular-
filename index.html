@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Otot (Muskular) - Presentation Web</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <!-- HERO SECTION -->
+    <header class="hero-card">
+        <h1 class="animated-heading">Sistem Otot (Muskular)</h1>
+        <div class="sub-heading">Anatomi dan Fisiologi Tubuh Manusia</div>
+        
+        <div class="badge-group">
+            <span class="badge">Kelompok 4</span>
+            <span class="badge">Kelas D</span>
+            <span class="badge">Pendidikan Biologi</span>
+        </div>
+
+        <div class="authors-box">
+            <div class="authors-title">Disusun Oleh:</div>
+            <div class="authors-list">
+                <span>Wulan Sari</span>
+                <span>•</span>
+                <span>Nania Estiana</span>
+                <span>•</span>
+                <span>Elsa Aulia Rahma</span>
+            </div>
+            <div class="lecturer">Dosen Pengampu: Dr. Dani Ramdani, S.Pd., M.Pd.</div>
+        </div>
+
+        <div class="hero-img-container">
+            <img src="images/gambar_2_1.jpg" alt="Anatomi Sistem Otot">
+        </div>
+
+        <div class="hero-actions">
+            <a href="#peta-section" class="btn-action btn-explore">
+                <span>🚀</span> Mulai Eksplorasi
+            </a>
+            <button class="btn-action btn-ref" onclick="openModal('modal-ref')">
+                <span>📚</span> Daftar Pustaka
+            </button>
+        </div>
+    </header>
+
+    <!-- PETA PEMBELAJARAN (9 KOLOM UTAMA) -->
+    <section id="peta-section" class="peta-section">
+        <div class="peta-header">
+            <h2 class="sub-heading" style="color: var(--primary-green); font-size: 1.8rem; margin-bottom: 5px;">PETA PEMBELAJARAN</h2>
+            <p style="color: var(--text-muted); font-weight: 600;">Klik kolom di bawah untuk membuka materi secara bertahap</p>
+        </div>
+
+        <div class="peta-grid">
+            <div class="nav-card" onclick="switchPanel(1)">
+                <div class="nav-icon">🦴</div>
+                <div class="nav-text">Anatomi Makroskopis Otot Rangka</div>
+            </div>
+            <div class="nav-card" onclick="switchPanel(2)">
+                <div class="nav-icon">🔬</div>
+                <div class="nav-text">Struktur Mikroskopis Serat Otot</div>
+            </div>
+            <div class="nav-card" onclick="switchPanel(3)">
+                <div class="nav-icon">🧬</div>
+                <div class="nav-text">Struktur Molekul Sarkomer</div>
+            </div>
+            <div class="nav-card" onclick="switchPanel(4)">
+                <div class="nav-icon">⚡</div>
+                <div class="nav-text">Tautan Neuromuscular & Asetilkolin</div>
+            </div>
+            <div class="nav-card" onclick="switchPanel(5)">
+                <div class="nav-icon">🔄</div>
+                <div class="nav-text">Sliding Filament Theory</div>
+            </div>
+            <div class="nav-card" onclick="switchPanel(6)">
+                <div class="nav-icon">🧪</div>
+                <div class="nav-text">Relaksasi Otot & Pompa Kalsium</div>
+            </div>
+            <div class="nav-card" onclick="switchPanel(7)">
+                <div class="nav-icon">⚡</div>
+                <div class="nav-text">Sumber Energi Kontraksi</div>
+            </div>
+            <div class="nav-card" onclick="switchPanel(8)">
+                <div class="nav-icon">📈</div>
+                <div class="nav-text">Kedutan, Sumasi, Tetanus & Kelelahan</div>
+            </div>
+            <div class="nav-card" onclick="switchPanel(9)">
+                <div class="nav-icon">🏥</div>
+                <div class="nav-text">Kelainan Sistem Otot</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DISPLAY AREA UTAMA MATERI -->
+    <main class="content-display-area">
+
+        <!-- PANEL 1: ANATOMI MAKROSKOPIS OTOT RANGKA -->
+        <article id="panel-1" class="content-panel">
+            <h2 class="panel-heading">1. Anatomi Makroskopis Otot Rangka</h2>
+            <div class="intro-text">
+                Sistem muskular adalah alat gerak aktif: kontraksi otot menarik tulang melalui tendon, sedangkan tulang merupakan alat gerak pasif. Sistem ini menghasilkan gerak, mempertahankan postur, menstabilkan sendi, menghasilkan panas, dan menyimpan glikogen. Tubuh memiliki lebih dari 600 otot yang menyusun sekitar 40-50% berat tubuh. Aktivitasnya berhubungan erat dengan sistem saraf.
+            </div>
+
+            <div class="interactive-section">
+                <div class="btn-group-grid">
+                    <button class="sub-btn" onclick="toggleSubContent('p1-jenis')">💪 Jenis Otot</button>
+                    <button class="sub-btn" onclick="toggleSubContent('p1-makro')">🔍 Anatomi Makroskopis</button>
+                </div>
+
+                <!-- SUB: JENIS OTOT -->
+                <div id="p1-jenis" class="sub-content-detail">
+                    <h3 class="detail-title">Jenis-Jenis Otot</h3>
+                    <div class="media-box">
+                        <img src="images/gambar_2_3.jpg" alt="Jenis-Jenis Otot">
+                        <div class="img-caption">Gambar 2.3 Jenis-Jenis Otot</div>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 15px; margin-top: 20px;">
+                        <div style="background: #ffebee; padding: 20px; border-radius: 16px; border-top: 5px solid #ef5350;">
+                            <h4 style="color: #c62828; margin-bottom: 8px;">🟥 Otot Rangka</h4>
+                            <p style="font-size: 0.92rem;">Otot rangka merupakan otot yang melekat pada tulang dan umumnya bekerja secara sadar. Kontraksinya menghasilkan berbagai gerakan tubuh seperti berjalan, berlari, dan mempertahankan postur.</p>
+                            <ul style="margin-left: 18px; margin-top: 8px; font-size: 0.88rem;">
+                                <li>Melekat pada tulang (Volunter)</li>
+                                <li>Serat panjang, tidak bercabang</li>
+                                <li>Multinukleat di perifer & bergaris (striasi)</li>
+                            </ul>
+                        </div>
+
+                        <div style="background: #fffde7; padding: 20px; border-radius: 16px; border-top: 5px solid #ffee58;">
+                            <h4 style="color: #f57f17; margin-bottom: 8px;">🟨 Otot Polos</h4>
+                            <p style="font-size: 0.92rem;">Otot polos ditemukan pada dinding organ dalam seperti usus, lambung, dan pembuluh darah. Bekerja secara tidak sadar (involunter) untuk memindahkan zat.</p>
+                            <ul style="margin-left: 18px; margin-top: 8px; font-size: 0.88rem;">
+                                <li>Dinding organ dalam</li>
+                                <li>Involunter (otonom)</li>
+                                <li>Bentuk gelendong, tanpa striasi</li>
+                            </ul>
+                        </div>
+
+                        <div style="background: #e3f2fd; padding: 20px; border-radius: 16px; border-top: 5px solid #42a5f5;">
+                            <h4 style="color: #1565c0; margin-bottom: 8px;">🟦 Otot Jantung</h4>
+                            <p style="font-size: 0.92rem;">Otot jantung hanya ditemukan pada dinding jantung dan bekerja secara tidak sadar secara ritmis untuk memompa darah ke seluruh tubuh.</p>
+                            <ul style="margin-left: 18px; margin-top: 8px; font-size: 0.88rem;">
+                                <li>Hanya di jantung</li>
+                                <li>Involunter & ritmis</li>
+                                <li>Serat bercabang dengan diskus interkalaris</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="did-you-know">
+                        <strong>💡 Tahukah kamu?</strong> Ketiga jenis otot sama-sama menghasilkan tegangan otot melalui pengubahan energi kimia (ATP) menjadi energi mekanis, tetapi memiliki struktur dan regulasi kerja yang berbeda.
+                    </div>
+                </div>
+
+                <!-- SUB: ANATOMI MAKROSKOPIS -->
+                <div id="p1-makro" class="sub-content-detail">
+                    <h3 class="detail-title">Lapisan Jaringan Ikat & Tendon</h3>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 15px;">
+                        <div class="media-box">
+                            <img src="images/gambar_2_2.jpg" alt="Letak Ligamen dan Tendon">
+                            <div class="img-caption">Gambar 2.2 Letak Ligamen dan Tendon</div>
+                        </div>
+                        <div class="media-box">
+                            <img src="images/gambar_2_5.jpg" alt="Struktur Anatomi Makroskopis">
+                            <div class="img-caption">Gambar 2.5 Struktur Anatomi Makroskopis Otot Rangka</div>
+                        </div>
+                    </div>
+
+                    <div class="arrow-card-grid" style="margin-top: 20px;">
+                        <div style="background: #f8fafc; padding: 18px; border-radius: 14px; border-left: 4px solid var(--primary-green);">
+                            <strong>Epimisium:</strong> Lapisan jaringan ikat paling luar yang membungkus seluruh spesimen otot. Memisahkan otot dari jaringan sekitarnya.
+                        </div>
+                        <div style="background: #f8fafc; padding: 18px; border-radius: 14px; border-left: 4px solid var(--secondary-green);">
+                            <strong>Perimisium:</strong> Jaringan ikat yang membungkus sekelompok serat otot yang disebut fasikulus. Mengandung pembuluh darah dan saraf.
+                        </div>
+                        <div style="background: #f8fafc; padding: 18px; border-radius: 14px; border-left: 4px solid var(--accent-yellow);">
+                            <strong>Endomisium:</strong> Lapisan halus paling dalam yang membungkus tiap-tiap serat/sel otot individu tepat di luar sarkolema.
+                        </div>
+                        <div style="background: #f8fafc; padding: 18px; border-radius: 14px; border-left: 4px solid #2d6a4f;">
+                            <strong>Tendon, Origo & Insersio:</strong> Tendon meneruskan gaya kontraksi ke tulang.
+                            <div style="margin-top: 8px; display: flex; gap: 15px; flex-wrap: wrap;">
+                                <span style="background: #e8f5e9; padding: 6px 12px; border-radius: 8px;"><strong>Origo:</strong> Ujung otot pada tulang yang stabil/tetap saat kontraksi.</span>
+                                <span style="background: #e8f5e9; padding: 6px 12px; border-radius: 8px;"><strong>Insersio:</strong> Ujung otot pada tulang yang bergerak saat kontraksi.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CIRI HISTOLOGIS -->
+            <div style="margin-top: 35px; background: #ffffff; padding: 25px; border-radius: 20px; border: 2px solid var(--border-soft);">
+                <h3 class="detail-title">📋 Ringkasan Ciri Histologis Otot Rangka</h3>
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>Ciri Histologis</th>
+                            <th>Keterangan Deskriptif</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Bentuk Serat</td><td>Panjang, silindris, tidak bercabang</td></tr>
+                        <tr><td>Nukleus</td><td>Multinukleat (banyak sel), posisi perifer di bawah sarkolema</td></tr>
+                        <tr><td>Striasi</td><td>Pita A (gelap) dan Pita I (terang) melintang jelas</td></tr>
+                        <tr><td>Pembungkus</td><td>Endomisium (serat) → Perimisium (fasikulus) → Epimisium (otot)</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </article>
+
+        <!-- PANEL 2: STRUKTUR MIKROSKOPIS SERAT OTOT -->
+        <article id="panel-2" class="content-panel">
+            <h2 class="panel-heading">2. Struktur Mikroskopis Serat Otot</h2>
+            <div class="intro-text">
+                Serat otot rangka berbentuk silindris panjang dengan miofibril memanjang yang menampilkan pita gelap dan terang. Sistem membrannya terdiri atas sarkolema, tubulus T, dan retikulum sarkoplasma; ketiganya penting untuk penghantaran rangsangan dan kontraksi.
+            </div>
+
+            <div class="media-box">
+                <img src="images/gambar_2_6.jpg" alt="Struktur Mikroskopis Serat Otot">
+                <div class="img-caption">Gambar 2.6 Struktur Anatomi Mikroskopis Serat Otot</div>
+            </div>
+
+            <div class="btn-group-grid">
+                <button class="sub-btn" onclick="toggleSubContent('p2-sarkolema')">🧬 Sarkolema</button>
+                <button class="sub-btn" onclick="toggleSubContent('p2-tubulus')">📐 Tubulus T & Triad</button>
+                <button class="sub-btn" onclick="toggleSubContent('p2-retikulum')">🛢️ Retikulum Sarkoplasma</button>
+                <button class="sub-btn" onclick="toggleSubContent('p2-miofibril')">🧵 Miofibril & Miofilamen</button>
+            </div>
+
+            <div id="p2-sarkolema" class="sub-content-detail">
+                <h3 class="detail-title">Sarkolema</h3>
+                <p>Sarkolema merupakan membran plasma yang membungkus sarkoplasma serat otot. Sarkolema berfungsi menerima depolarisasi sinyal saraf dan meneruskannya ke bagian dalam serat otot melalui invaginasi tubulus T.</p>
+            </div>
+
+            <div id="p2-tubulus" class="sub-content-detail">
+                <h3 class="detail-title">Tubulus T & Triad</h3>
+                <p>Tubulus T (transversal) adalah invaginasi sarkolema yang menembus hingga ke bagian dalam serat otot. Tubulus T diapit oleh dua sisterna terminalis retikulum sarkoplasma membentuk <strong>Triad</strong>. Triad penting untuk menyalurkan potensial aksi secara cepat memicu pelepasan ion Ca²⁺.</p>
+            </div>
+
+            <div id="p2-retikulum" class="sub-content-detail">
+                <h3 class="detail-title">Retikulum Sarkoplasma</h3>
+                <p>Retikulum sarkoplasma merupakan sistem membran intraseluler khusus yang berfungsi sebagai tempat penyimpanan utama ion kalsium (Ca²⁺). Saat depolarisasi tiba, kanal Ca²⁺ terbuka melepaskan kalsium ke sarkoplasma.</p>
+            </div>
+
+            <div id="p2-miofibril" class="sub-content-detail">
+                <h3 class="detail-title">Miofibril & Miofilamen</h3>
+                <p>Miofibril adalah elemen kontraktil silindris yang memenuhi sarkoplasma. Di dalamnya tersusun atas miofilamen tebal (miosin), miofilamen tipis (aktin), dan miofilamen elastis (titin).</p>
+            </div>
+        </article>
+
+        <!-- PANEL 3: STRUKTUR MOLEKUL SARKOMER -->
+        <article id="panel-3" class="content-panel">
+            <h2 class="panel-heading">3. Struktur Molekuler Sarkomer</h2>
+            <div class="intro-text">
+                Sarkomer adalah unit kontraktil terkecil yang membentang dari satu garis Z ke garis Z berikutnya. Filamen tidak memendek; aktin dan miosin bergeser relatif sehingga garis Z mendekat, pita I serta zona H memendek, sedangkan pita A relatif tetap.
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px;">
+                <div class="media-box"><img src="images/gambar_2_7.jpg" alt="Molekular Sarkomer"><div class="img-caption">Gambar 2.7 Struktur Molekular Sarkomer</div></div>
+                <div class="media-box"><img src="images/gambar_2_8.jpg" alt="Troponin dan Tropomiosin"><div class="img-caption">Gambar 2.8 Troponin & Tropomiosin</div></div>
+                <div class="media-box"><img src="images/gambar_2_9.jpg" alt="Anatomi Sarkomer"><div class="img-caption">Gambar 2.9 Anatomi Serat Otot & Sarkomer</div></div>
+            </div>
+
+            <div class="arrow-card-grid">
+                <button class="arrow-btn" onclick="toggleSubContent('p3-miosin')">1. Filamen Tebal Miosin</button>
+                <button class="arrow-btn" onclick="toggleSubContent('p3-aktin')">2. Filamen Tipis Aktin</button>
+                <button class="arrow-btn" onclick="toggleSubContent('p3-titin')">3. Filamen Elastis Titin</button>
+                <button class="arrow-btn" onclick="toggleSubContent('p3-regulator')">4. Troponin & Tropomiosin</button>
+                <button class="arrow-btn" onclick="toggleSubContent('p3-garis')">5. Garis Z & Garis M</button>
+                <button class="arrow-btn" onclick="toggleSubContent('p3-pita')">6. Pita A, Pita I & Zona H</button>
+            </div>
+
+            <div id="p3-miosin" class="sub-content-detail">
+                <h3 class="detail-title">Miosin (Filamen Tebal)</h3>
+                <p>Miosin adalah protein motorik dengan kepala yang memiliki aktivitas ATPase. Kepala miosin mengikat aktin membentuk cross-bridge untuk melakukan power stroke.</p>
+            </div>
+            <div id="p3-aktin" class="sub-content-detail">
+                <h3 class="detail-title">Aktin (Filamen Tipis)</h3>
+                <p>Aktin tersusun atas molekul F-aktin berbentuk heliks yang menyediakan binding site untuk kepala miosin.</p>
+            </div>
+            <div id="p3-titin" class="sub-content-detail">
+                <h3 class="detail-title">Titin</h3>
+                <p>Protein raksasa elastis yang membentang dari garis Z ke garis M, mempertahankan stabilitas posisi miosin dan memberikan elastisitas pasif.</p>
+            </div>
+            <div id="p3-regulator" class="sub-content-detail">
+                <h3 class="detail-title">Troponin & Tropomiosin</h3>
+                <p><strong>Tropomiosin</strong> menutupi binding site aktin saat relaksasi. <strong>Troponin</strong> (kompleks T, I, C) mengikat Ca²⁺ untuk menggeser tropomiosin saat kontraksi.</p>
+            </div>
+            <div id="p3-garis" class="sub-content-detail">
+                <h3 class="detail-title">Garis Z & Garis M</h3>
+                <p><strong>Garis Z:</strong> Batas antar sarkomer, tempat tertancapnya aktin.<br><strong>Garis M:</strong> Garis tengah sarkomer yang menahan filamen miosin.</p>
+            </div>
+            <div id="p3-pita" class="sub-content-detail">
+                <h3 class="detail-title">Pita A, Pita I & Zona H</h3>
+                <p><strong>Pita A:</strong> Daerah gelap (panjang miosin, tetap saat kontraksi).<br><strong>Pita I:</strong> Daerah terang (hanya aktin, memendek).<br><strong>Zona H:</strong> Daerah tengah pita A (hanya miosin, memendek/hilang).</p>
+            </div>
+        </article>
+
+        <!-- PANEL 4: TAUTAN NEUROMUSCULAR DAN ASETILKOLIN -->
+        <article id="panel-4" class="content-panel">
+            <h2 class="panel-heading">4. Tautan Neuromuscular & Asetilkolin</h2>
+            <div class="intro-text">
+                Neuromuscular Junction (NMJ) adalah sinapsis kimia khusus yang menghubungkan terminal akson motor neuron dengan membran pelat ujung (motor end-plate) serat otot.
+            </div>
+
+            <div class="btn-group-grid">
+                <button class="sub-btn" onclick="toggleSubContent('p4-struktur')">🏛️ Struktur Anatomi NMJ</button>
+                <button class="sub-btn" onclick="toggleSubContent('p4-tahapan')">🔄 Tahapan Transmisi NMJ</button>
+            </div>
+
+            <div id="p4-struktur" class="sub-content-detail">
+                <h3 class="detail-title">Struktur NMJ</h3>
+                <div class="media-box">
+                    <img src="images/gambar_2_11.jpg" alt="Anatomi NMJ">
+                    <div class="img-caption">Gambar 2.11 Anatomi Neuromuscular Junction</div>
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px;">
+                    <div style="background: #f0fdf4; padding: 15px; border-radius: 12px;"><strong>Presynaptic Terminal:</strong> Mengandung vesikel Asetilkolin (ACh) & kanal Ca²⁺.</div>
+                    <div style="background: #f0fdf4; padding: 15px; border-radius: 12px;"><strong>Synaptic Cleft:</strong> Celah 30-50 nm berisi enzim Asetilkolinesterase (AChE).</div>
+                    <div style="background: #f0fdf4; padding: 15px; border-radius: 12px;"><strong>End Plate / Postsynaptic:</strong> Membran sarkolema berlipat (junctional folds) penuh reseptor ACh.</div>
+                </div>
+            </div>
+
+            <div id="p4-tahapan" class="sub-content-detail">
+                <h3 class="detail-title">8 Tahapan Pelepasan & Kerja Asetilkolin</h3>
+                <div class="media-box">
+                    <img src="images/gambar_2_12.jpg" alt="Mekanisme NMJ">
+                    <div class="img-caption">Gambar 2.12 Mekanisme Neuromuscular Junction</div>
+                </div>
+                <ol style="margin-left: 20px; line-height: 1.8;">
+                    <li>Potensial aksi merambat hingga ke terminal pra-sinapsis.</li>
+                    <li>Kanal Ca²⁺ berpintu tegangan terbuka, Ca²⁺ masuk ke terminal.</li>
+                    <li>Ca²⁺ memicu eksositosis vesikel ACh ke celah sinaptik.</li>
+                    <li>ACh berdifusi menyeberangi celah sinaptik.</li>
+                    <li>ACh berikatan dengan reseptor nikotinik di pelat ujung.</li>
+                    <li>Kanal kation terbuka, Na⁺ masuk masif menyebabkan depolarisasi lokal.</li>
+                    <li>Potensial pelat ujung memicu potensial aksi pada sarkolema.</li>
+                    <li>ACh diuraikan oleh Asetilkolinesterase (AChE) untuk mengakhiri rangsangan.</li>
+                </ol>
+            </div>
+        </article>
+
+        <!-- PANEL 5: SLIDING FILAMENT THEORY -->
+        <article id="panel-5" class="content-panel">
+            <h2 class="panel-heading">5. Sliding Filament Theory</h2>
+            <div class="intro-text">
+                Kontraksi terjadi karena pergeseran relatif filamen aktin di atas filamen miosin yang ditarik oleh kayuhan daya (power stroke) kepala miosin dengan bantuan energi ATP.
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 15px;">
+                <div class="media-box"><img src="images/gambar_2_14.jpg" alt="Inisiasi Kontraksi"><div class="img-caption">Gambar 2.14 Inisiasi Kontraksi Otot</div></div>
+                <div class="media-box"><img src="images/gambar_2_15.jpg" alt="Tahapan Sliding Filament"><div class="img-caption">Gambar 2.15 Tahapan Sliding Filament Theory</div></div>
+            </div>
+
+            <h3 class="detail-title" style="margin-top: 20px;">6 Langkah Siklus Cross-Bridge:</h3>
+            <div class="arrow-card-grid">
+                <div class="arrow-btn">1. Potensial Aksi merambat di sarkolema & Tubulus T</div>
+                <div class="arrow-btn">2. Ca²⁺ dilepas dari Retikulum Sarkoplasma</div>
+                <div class="arrow-btn">3. Ca²⁺ berikatan dengan Troponin → Tropomiosin bergeser</div>
+                <div class="arrow-btn">4. Cross-Bridge terbentuk (Miosin mengikat Aktin)</div>
+                <div class="arrow-btn">5. Power Stroke (Kayuhan Daya menarik Aktin ke pusat)</div>
+                <div class="arrow-btn">6. Pelepasan & Relaksasi/Pengulangan (ATP baru mengikat miosin)</div>
+            </div>
+
+            <div style="margin-top: 25px;">
+                <h3 class="detail-title">Dinamika Perubahan Sarkomer Saat Kontraksi</h3>
+                <div class="media-box"><img src="images/gambar_2_16.jpg" alt="Sarkomer Kontraksi"><div class="img-caption">Gambar 2.16 Sarkomer saat Kontraksi</div></div>
+                <table class="styled-table">
+                    <thead>
+                        <tr><th>Elemen Sarkomer</th><th>Perubahan saat Kontraksi</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Garis Z</td><td>Bergerak saling mendekat</td></tr>
+                        <tr><td>Panjang Sarkomer</td><td>Memendek secara keseluruhan</td></tr>
+                        <tr><td>Pita I</td><td>Memendek signifikan</td></tr>
+                        <tr><td>Zona H</td><td>Memendek hingga hilang</td></tr>
+                        <tr><td>Pita A</td><td>Tetap (tidak berubah)</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </article>
+
+        <!-- PANEL 6: RELAKSASI OTOT DAN POMPA KALSIUM -->
+        <article id="panel-6" class="content-panel">
+            <h2 class="panel-heading">6. Relaksasi Otot & Pompa Kalsium</h2>
+            <div class="intro-text">
+                Relaksasi terjadi ketika impuls saraf berhenti dan Ca²⁺ dipompa kembali secara aktif ke dalam retikulum sarkoplasma oleh pompa kalsium SERCA dengan menghabiskan ATP.
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 15px;">
+                <div class="media-box"><img src="images/gambar_2_17.jpg" alt="Inisiasi Relaksasi"><div class="img-caption">Gambar 2.17 Inisiasi Relaksasi Otot</div></div>
+                <div class="media-box"><img src="images/gambar_2_18.jpg" alt="Rangkaian Kontraksi Relaksasi"><div class="img-caption">Gambar 2.18 Rangkaian Proses Kontraksi & Relaksasi</div></div>
+            </div>
+
+            <div class="arrow-card-grid" style="margin-top: 20px;">
+                <div class="arrow-btn">1. Stimulasi Saraf Berhenti (ACh diuraikan AChE)</div>
+                <div class="arrow-btn">2. Repolarisasi Membran Sarkolema</div>
+                <div class="arrow-btn">3. Pompa SERCA memompa aktif Ca²⁺ kembali ke Retikulum Sarkoplasma</div>
+                <div class="arrow-btn">4. Ion Ca²⁺ terlepas dari Kompleks Troponin C</div>
+                <div class="arrow-btn">5. Tropomiosin kembali menutup Binding Site Aktin</div>
+                <div class="arrow-btn">6. Tegangan Turun & Otot Kembali Relaksasi Pasif</div>
+            </div>
+        </article>
+
+        <!-- PANEL 7: SUMBER ENERGI KONTRAKSI -->
+        <article id="panel-7" class="content-panel">
+            <h2 class="panel-heading">7. Sumber Energi Kontraksi Otot</h2>
+            <div class="intro-text">
+                ATP adalah sumber energi langsung untuk kayuhan miosin dan pompa SERCA. Karena ATP tersimpan sedikit, otot menggunakan 3 jalur regenerasi ATP.
+            </div>
+
+            <div class="media-box">
+                <img src="images/gambar_2_19.jpg" alt="Metabolisme Otot">
+                <div class="img-caption">Gambar 2.19 Metabolisme Energi Otot</div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 18px; margin-top: 20px;">
+                <div style="background: #e8f5e9; padding: 22px; border-radius: 18px; border: 2px solid #a5d6a7;">
+                    <h3 style="color: var(--primary-green); margin-bottom: 10px;">⚡ Jalur Fosfagen (Fosfokreatin)</h3>
+                    <p style="font-size: 0.93rem;">Transfer fosfat dari Kreatin Fosfat ke ADP oleh kreatin kinase. Sangat cepat, tanpa O₂, bertahan ~15 detik untuk aktivitas maksimal mendadak.</p>
+                </div>
+                <div style="background: #fffde7; padding: 22px; border-radius: 18px; border: 2px solid #ffe082;">
+                    <h3 style="color: #b78103; margin-bottom: 10px;">🧪 Glikolisis Anaerobik</h3>
+                    <p style="font-size: 0.93rem;">Pemecahan glukosa/glikogen menjadi asam piruvat/laktat. Menghasilkan 2 ATP per glukosa, tanpa O₂, menopang kerja intens ~1 menit.</p>
+                </div>
+                <div style="background: #e1f5fe; padding: 22px; border-radius: 18px; border: 2px solid #81d4fa;">
+                    <h3 style="color: #0277bd; margin-bottom: 10px;">🫁 Respirasi Aerobik</h3>
+                    <p style="font-size: 0.93rem;">Metabolisme di mitokondria membutuhkan O₂ mutlak. Menghasilkan ~32-36 ATP, menopang aktivitas daya tahan lama (berjam-jam).</p>
+                </div>
+            </div>
+        </article>
+
+        <!-- PANEL 8: KEDUTAN, SUMASI, TETANUS, DAN KELELAHAN -->
+        <article id="panel-8" class="content-panel">
+            <h2 class="panel-heading">8. Kedutan, Sumasi, Tetanus & Kelelahan</h2>
+            <div class="intro-text">
+                Karakteristik mekanik respons otot bervariasi dari kedutan tunggal hingga kontraksi tetanik mulus tergantung frekuensi stimulasi saraf.
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 15px;">
+                <div class="media-box"><img src="images/gambar_2_20.jpg" alt="Myogram Kedutan"><div class="img-caption">Gambar 2.20 Myogram Kedutan Otot (3 Fase: Laten, Kontraksi, Relaksasi)</div></div>
+                <div class="media-box"><img src="images/gambar_2_21.jpg" alt="Sumasi dan Tetanus"><div class="img-caption">Gambar 2.21 Sumasi Gelombang dan Tetanus</div></div>
+            </div>
+
+            <div style="margin-top: 20px;">
+                <h3 class="detail-title">Faktor Penyebab Kelelahan Otot (Muscle Fatigue)</h3>
+                <ul style="margin-left: 20px; line-height: 1.8;">
+                    <li><strong>Akumulasi Fosfat Anorganik (Pi):</strong> Menghambat pelepasan Ca²⁺ dan melemahkan kayuhan miosin.</li>
+                    <li><strong>Gangguan Gradien Ionik Tubulus T:</strong> Akumulasi K⁺ ekstraseluler mengganggu depolarisasi.</li>
+                    <li><strong>Penurunan Sensitivitas Kalsium:</strong> Menurunnya respons troponin terhadap Ca²⁺.</li>
+                    <li><strong>Central Drive Fatigue:</strong> Penurunan frekuensi sinyal dari sistem saraf pusat.</li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- PANEL 9: KELAINAN SISTEM OTOT -->
+        <article id="panel-9" class="content-panel">
+            <h2 class="panel-heading">9. Kelainan Sistem Otot</h2>
+            <div class="intro-text">
+                Gangguan patologis pada sistem otot dapat disebabkan oleh mutasi genetik, reaksi autoimun, infeksi bakteri, maupun mikrotrauma akibat beban berlebih.
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px;">
+                <div style="background: #ffffff; border-radius: 20px; padding: 20px; border: 2px solid var(--border-soft); box-shadow: var(--shadow-sm);">
+                    <h3 style="color: var(--primary-green); font-size: 1.2rem; margin-bottom: 10px;">🧬 Distrofi Otot Duchenne (DMD)</h3>
+                    <div class="media-box"><img src="images/gambar_2_23.jpg" alt="DMD"><div class="img-caption">Gambar 2.23 Distrofi Otot Duchenne</div></div>
+                    <p style="font-size: 0.9rem;">Kelainan bawaan akibat defisiensi protein <strong>distrofin</strong> yang menghubungkan miofibril ke sarkolema, menyebabkan kerusakan otot progresif.</p>
+                </div>
+
+                <div style="background: #ffffff; border-radius: 20px; padding: 20px; border: 2px solid var(--border-soft); box-shadow: var(--shadow-sm);">
+                    <h3 style="color: var(--primary-green); font-size: 1.2rem; margin-bottom: 10px;">🧠 Miastenia Gravis (MG)</h3>
+                    <div class="media-box"><img src="images/gambar_2_22.jpg" alt="Miastenia Gravis"><div class="img-caption">Gambar 2.22 Miastenia Gravis</div></div>
+                    <p style="font-size: 0.9rem;">Penyakit autoimun di mana antibodi menyerang reseptor ACh di NMJ, memicu kelemahan otot (ptosis, diplopia).</p>
+                </div>
+
+                <div style="background: #ffffff; border-radius: 20px; padding: 20px; border: 2px solid var(--border-soft); box-shadow: var(--shadow-sm);">
+                    <h3 style="color: var(--primary-green); font-size: 1.2rem; margin-bottom: 10px;">🦠 Tetanus</h3>
+                    <div class="media-box"><img src="images/gambar_2_24.jpg" alt="Tetanus"><div class="img-caption">Gambar 2.24 Tetanus</div></div>
+                    <p style="font-size: 0.9rem;">Infeksi racun bakteri <i>Clostridium tetani</i> yang menyerang sistem saraf pemicu spasma otot rahang (lockjaw) kekang parah.</p>
+                </div>
+
+                <div style="background: #ffffff; border-radius: 20px; padding: 20px; border: 2px solid var(--border-soft); box-shadow: var(--shadow-sm);">
+                    <h3 style="color: var(--primary-green); font-size: 1.2rem; margin-bottom: 10px;">🦴 Tendinitis</h3>
+                    <div class="media-box"><img src="images/gambar_2_25.jpg" alt="Tendinitis"><div class="img-caption">Gambar 2.25 Tendinitis</div></div>
+                    <p style="font-size: 0.9rem;">Peradangan pada tendon akibat gerakan berulang berlebih (overuse mikrotrauma) seperti tennis elbow.</p>
+                </div>
+            </div>
+        </article>
+
+    </main>
+
+    <!-- FOOTER: SIMPULAN & SARAN -->
+    <footer class="footer-card">
+        <button class="accordion-btn" onclick="toggleAccordion('acc-penutup')">
+            <span>📌 BAB III: PENUTUP (Simpulan & Saran)</span>
+            <span>▼</span>
+        </button>
+        <div id="acc-penutup" class="accordion-content">
+            <h3 style="color: var(--primary-green); margin-bottom: 10px;">A. Simpulan</h3>
+            <p style="margin-bottom: 15px;">Sistem muskular merupakan bagian penting dalam tubuh manusia yang berperan dalam menghasilkan gerakan, mempertahankan postur, menstabilkan tubuh, dan mendukung berbagai aktivitas fungsional. Otot rangka sebagai alat gerak aktif memiliki struktur terorganisasi dari tingkat makroskopis (epimisium, perimisium, endomisium, tendon) hingga molekuler (aktin, miosin, sarkomer). Kontraksi berlangsung melalui mekanisme <i>sliding filament</i> yang dipicu oleh pelepasan Asetilkolin di NMJ dan regulasi ion Ca²⁺ serta ATP.</p>
+            
+            <h3 style="color: var(--primary-green); margin-bottom: 10px;">B. Saran</h3>
+            <p>Mahasiswa dan pembelajar biologi disarankan untuk lebih aktif dalam mempelajari struktur anatomi serta fisiologi molekuler sistem otot melalui media interaktif dan literatur ilmiah terpercaya guna mendukung pemahaman materi secara komprehensif.</p>
+        </div>
+    </footer>
+</div>
+
+<!-- MODAL DAFTAR PUSTAKA -->
+<div id="modal-ref" class="modal-overlay">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3 class="modal-title">📚 DAFTAR PUSTAKA</h3>
+            <button class="btn-close" onclick="closeModal('modal-ref')">&times;</button>
+        </div>
+        <ul class="ref-list">
+            <li>Arnold, W. D., & Clark, A. (2023). Neuromuscular junction physiology and pathophysiology. <i>Journal of Clinical Neurophysiology</i>, 40(2), 110–118.</li>
+            <li>Barker, D., et al. (2024). Calcium handling in muscle contraction and relaxation. <i>Physiological Reviews</i>, 104(1), 45–82.</li>
+            <li>Ginting, R., et al. (2022). <i>Anatomi Fisiologi Tubuh Manusia</i>. Medan: Yayasan Kita Menulis.</li>
+            <li>Herzog, W. (2024). The cross-bridge theory and sliding filament mechanism: 70 years on. <i>Journal of Biomechanics</i>, 162, 111890.</li>
+            <li>Iyer, C. C., et al. (2021). Comparative anatomy of the mammalian neuromuscular junction. <i>Anatomical Record</i>, 304(5), 980–992.</li>
+            <li>Madri, M. (2017). Anatomi dan Fisiologi Otot Rangka Manusia. <i>Jurnal Olahraga Indragiri</i>, 4(1), 18–27.</li>
+            <li>Mustafa, A. (2023). Struktur Molekuler Sarkomer dan Mekanisme Kontraksi. <i>Jurnal Edukasi Biologi</i>, 9(2), 101–112.</li>
+            <li>Putra, A. A., et al. (2022). <i>Fisiologi Sistem Gerak Manusia</i>. Jakarta: EGC.</li>
+            <li>Ramadan, M., et al. (2025). Human vs rodent neuromuscular junctions: Morphological differences. <i>Neuroscience Letters</i>, 810, 137320.</li>
+            <li>Toniolo, L., & Giacomello, E. (2020). Muscle fatigue: Mechanisms and biomarkers. <i>International Journal of Molecular Sciences</i>, 21(12), 4415.</li>
+            <li>Wangko, S. (2014). Jaringan Otot Rangka: Sistem Membran dan Struktur Halus. <i>Jurnal Biomedik (JBM)</i>, 6(2), 27–35.</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Custom JS -->
+<script src="script.js"></script>
+</body>
+</html>
